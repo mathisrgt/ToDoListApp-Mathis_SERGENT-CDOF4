@@ -1,7 +1,7 @@
-# ToDoListApp-Mathis_SERGENT-CDFO4
+# ToDoListApp-Mathis_SERGENT-CDFO4 📋
 This is a console-based application in Python designed to help you keep track of your tasks. You can add, delete, and mark tasks as completed.
 
-## How to Run the Project
+## How to Run the Project 🚀
 
 To run this To-Do app on your local machine, follow these steps:
 
@@ -16,7 +16,7 @@ To run this To-Do app on your local machine, follow these steps:
 
 4. Follow the on-screen menu to interact with the To-Do app.
 
-## How to Contribute
+## How to Contribute 🤝
 
 We welcome contributions to improve this project! If you'd like to contribute, please follow these guidelines:
 
@@ -39,4 +39,4 @@ We welcome contributions to improve this project! If you'd like to contribute, p
 
 8. Your contribution will be reviewed, and once approved, it will be merged into the main project.
 
-Thank you for your contribution!
+### 😄 Thank you for your contribution!
