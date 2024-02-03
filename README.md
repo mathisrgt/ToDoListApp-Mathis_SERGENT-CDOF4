@@ -6,7 +6,7 @@ This is a console-based application in Python designed to help you keep track of
 To run this To-Do app on your local machine, follow these steps:
 
 1. Clone the repository to your local machine:
-   git clone https://github.com/yourusername/todo-app.git
+   git clone https://github.com/mathisrgt/ToDoListApp-Mathis_SERGENT-CDFO4.git
 
 2. Navigate to the project directory:
    cd todo-app
