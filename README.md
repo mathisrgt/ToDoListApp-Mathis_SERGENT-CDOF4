@@ -30,7 +30,7 @@ We welcome contributions to improve this project! If you'd like to contribute, p
 
 2. Clone your forked repository to your local machine:
    ```
-   git clone https://github.com/yourusername/todo-app.git
+   git clone https://github.com/mathisrgt/ToDoListApp-Mathis_SERGENT-CDFO4.git
    ```
    
 4. Create a new branch for your changes:
