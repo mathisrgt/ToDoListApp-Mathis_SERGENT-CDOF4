@@ -1,4 +1,4 @@
-# ToDoListApp-Mathis_SERGENT-CDFO4 📋
+# ToDoListApp-Mathis_SERGENT-CDOF4 📋
 This is a console-based application in Python designed to help you keep track of your tasks. You can add, delete, and mark tasks as completed.
 
 ## How to Run the Project 🚀
