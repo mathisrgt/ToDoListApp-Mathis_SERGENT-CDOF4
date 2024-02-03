@@ -39,4 +39,4 @@ We welcome contributions to improve this project! If you'd like to contribute, p
 
 8. Your contribution will be reviewed, and once approved, it will be merged into the main project.
 
-### 😄 Thank you for your contribution!
+### Thank you for your contribution! 😄
