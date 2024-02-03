@@ -29,20 +29,26 @@ We welcome contributions to improve this project! If you'd like to contribute, p
 1. Fork the repository on GitHub.
 
 2. Clone your forked repository to your local machine:
+   ```
    git clone https://github.com/yourusername/todo-app.git
-
-3. Create a new branch for your changes:
+   ```
+   
+4. Create a new branch for your changes:
+   ```
    git checkout -b feature/your-feature-name
+   ```
+   
+6. Make your changes and commit them with descriptive messages.
 
-4. Make your changes and commit them with descriptive messages.
-
-5. Push your changes to your forked repository:
+7. Push your changes to your forked repository:
+   ```
    git push origin feature/your-feature-name
+   ```
+   
+9. Create a pull request from your branch to the main repository on GitHub.
 
-6. Create a pull request from your branch to the main repository on GitHub.
+10. Provide a clear description of your changes and their purpose in the pull request.
 
-7. Provide a clear description of your changes and their purpose in the pull request.
-
-8. Your contribution will be reviewed, and once approved, it will be merged into the main project.
+11. Your contribution will be reviewed, and once approved, it will be merged into the main project.
 
 ### Thank you for your contribution! 😄
