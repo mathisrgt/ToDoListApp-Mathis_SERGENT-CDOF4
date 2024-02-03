@@ -1,2 +1,2 @@
 # ToDoListApp-Mathis_SERGENT-CDFO4
-To-do list application for Windows users developed in Python.
+To-do list application developed in Python.
