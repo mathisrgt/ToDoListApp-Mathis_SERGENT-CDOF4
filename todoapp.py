@@ -1,11 +1,12 @@
 tasks = []
 
-def display_tasks():
-    if not tasks:
-        print("No tasks found.")
+def display_tasks_by_tag(tag):
+    filtered_tasks = [task for task in tasks if tag in task['tags']]
+    if not filtered_tasks:
+        print(f"No tasks found with the tag '{tag}'.")
     else:
-        print("Tasks:")
-        for i, task in enumerate(tasks, 1):
+        print(f"Tasks with the tag '{tag}':")
+        for i, task in enumerate(filtered_tasks, 1):
             print(f"{i}. {task['description']} [Tags: {', '.join(task['tags'])}]")
 
 def add_task(task, tags=[]):
@@ -30,27 +31,31 @@ def complete_task(task_num):
 def main():
     while True:
         print("\nMenu:")
-        print("1. Display tasks")
-        print("2. Add task")
-        print("3. Delete task")
-        print("4. Complete task")
-        print("5. Quit")
+        print("1. Display all tasks")
+        print("2. Display tasks by tag")
+        print("3. Add task")
+        print("4. Delete task")
+        print("5. Complete task")
+        print("6. Quit")
 
         choice = input("Enter your choice: ")
 
         if choice == "1":
-            display_tasks()
+            display_tasks_by_tag("")
         elif choice == "2":
+            tag = input("Enter the tag to filter tasks: ")
+            display_tasks_by_tag(tag)
+        elif choice == "3":
             task = input("Enter the task: ")
             tags = input("Enter tags (comma-separated, e.g., work,urgent): ").split(',')
             add_task(task, [tag.strip() for tag in tags])
-        elif choice == "3":
+        elif choice == "4":
             task_num = int(input("Enter the task number to delete: "))
             delete_task(task_num)
-        elif choice == "4":
+        elif choice == "5":
             task_num = int(input("Enter the task number to mark as complete: "))
             complete_task(task_num)
-        elif choice == "5":
+        elif choice == "6":
             print("Goodbye!")
             break
         else:
