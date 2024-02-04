@@ -12,12 +12,12 @@ To run this To-Do app on your local machine, follow these steps:
 
 2. Navigate to the project directory:
    ```
-   cd todo-app
+   cd ToDoListApp-Mathis_SERGENT-CDOF4
    ```
    
 4. Run the app using Python:
    ```
-   python todo_app.py
+   python todoapp.py
    ```
    
 6. Follow the on-screen menu to interact with the To-Do app.
