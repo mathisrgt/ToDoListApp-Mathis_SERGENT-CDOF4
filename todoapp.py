@@ -6,24 +6,24 @@ def display_tasks():
     else:
         print("Tasks:")
         for i, task in enumerate(tasks, 1):
-            print(f"{i}. {task}")
+            print(f"{i}. {task['description']} [Tags: {', '.join(task['tags'])}]")
 
-def add_task(task):
-    tasks.append(task)
+def add_task(task, tags=[]):
+    tasks.append({"description": task, "tags": tags})
     print(f"Added: {task}")
 
 def delete_task(task_num):
     if 1 <= task_num <= len(tasks):
         deleted_task = tasks.pop(task_num - 1)
-        print(f"Deleted: {deleted_task}")
+        print(f"Deleted: {deleted_task['description']}")
     else:
         print("Invalid task number.")
 
 def complete_task(task_num):
     if 1 <= task_num <= len(tasks):
         completed_task = tasks[task_num - 1]
-        tasks[task_num - 1] = f"[Completed] {completed_task}"
-        print(f"Completed: {completed_task}")
+        tasks[task_num - 1] = {"description": f"[Completed] {completed_task['description']}", "tags": completed_task['tags']}
+        print(f"Completed: {completed_task['description']}")
     else:
         print("Invalid task number.")
 
@@ -42,7 +42,8 @@ def main():
             display_tasks()
         elif choice == "2":
             task = input("Enter the task: ")
-            add_task(task)
+            tags = input("Enter tags (comma-separated, e.g., work,urgent): ").split(',')
+            add_task(task, [tag.strip() for tag in tags])
         elif choice == "3":
             task_num = int(input("Enter the task number to delete: "))
             delete_task(task_num)
@@ -55,5 +56,5 @@ def main():
         else:
             print("Invalid choice. Please try again.")
 
-if __name__ == "__main__":
+if _name_ == "_main_":
     main()
